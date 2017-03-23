@@ -11,6 +11,12 @@ class TestBasics(unittest.TestCase):
 	def test_exponentiation(self):
 		result = rpn.calculate('4 2 ^')
 		self.assertEqual(16, result)
-	def test_exponentiation(self):
+	def test_exponentiation2(self):
 		result = rpn.calculate('3 2 ^')
 		self.assertEqual(9, result)
+	def test_multiply(self):
+		result = rpn.calculate('8 4 *')
+		self.assertEqual(32, result)
+	def test_divide(self):
+		result = rpn.calculate('8 4 /')
+		self.assertEqual(2, result)

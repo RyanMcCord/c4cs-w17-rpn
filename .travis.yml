@@ -5,7 +5,7 @@ script:
   - "coverage run -m unittest"
 install:
   - "pip install coveralls"
-  - "pip install logging"
+  - "pip install matplotlib"
   - "pip install colour"
 after_success:
   - coveralls

@@ -6,7 +6,7 @@ script:
 install:
   - "pip install coveralls"
   - "pip install matplotlib"
-  - "pip install colour"
+  - "pip install colorconsole"
 after_success:
   - coveralls
 
